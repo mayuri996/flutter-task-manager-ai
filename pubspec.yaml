@@ -29,9 +29,5 @@ flutter:
     - assets/models/mobilebert.tflite
     - assets/vocab.txt
     - assets/labels.txt
-    - assets/register.jpg
-    - assets/google_logo.png
-    - assets/apple_logo.png
-    - assets/facebook_logo.png
     - assets/empty.json
     - assets/sync.json
