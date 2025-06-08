@@ -30,9 +30,10 @@ Check out some app screenshots showing off key features and UI vibes:
 |------------------|------------------|------------------|
 | ![Home Screen](assets/screenshots/homescreen.jpg) | ![Add Task](assets/screenshots/addtask.jpg) | ![Edit Task](assets/screenshots/edittask.jpg) |
 
-| Delete Task       | Check Task        |
-|-------------------|-------------------|
-| ![Delete Task](assets/screenshots/deletetask.jpg) | ![Check Task](assets/screenshots/checktask.jpg) |
+| Delete Task       | Check Task        | Task List        |
+|-------------------|-------------------|------------------|
+| ![Delete Task](assets/screenshots/deletetask.jpg) | ![Check Task](assets/screenshots/checktask.jpg) | ![Task List](assets/screenshots/tasklist.png) |
+
 
 ---
 ## 📱 App Structure & Features
