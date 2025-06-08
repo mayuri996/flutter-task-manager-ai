@@ -80,6 +80,16 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
     );
   }
 
+  // New gradient for AppBar & Button background
+  final LinearGradient _greenGradient = const LinearGradient(
+    colors: [
+      Color(0xFF2E7D32),
+      Color(0xFF81C784)
+    ], // dark green to lighter green
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
   @override
   Widget build(BuildContext context) {
     final isEditing = widget.task != null;
@@ -89,7 +99,12 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
       appBar: AppBar(
         title: Text(isEditing ? 'Edit Task' : 'Add Task'),
         elevation: 6,
-        backgroundColor: Colors.green.shade700,
+        backgroundColor: Colors.transparent,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: _greenGradient,
+          ),
+        ),
         shadowColor: Colors.green.shade200,
       ),
       body: SingleChildScrollView(
@@ -159,19 +174,37 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
                       child: ElevatedButton(
                         onPressed: _saveTask,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green.shade700,
-                          foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           elevation: 4,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14),
                           ),
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.transparent,
+                        ).copyWith(
+                          // override background color with gradient using Ink
+                          backgroundColor:
+                              MaterialStateProperty.resolveWith<Color?>(
+                            (states) => null,
+                          ),
+                          shadowColor:
+                              MaterialStateProperty.all(Colors.transparent),
                         ),
-                        child: Text(
-                          isEditing ? 'Update Task' : 'Add Task',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
+                        child: Ink(
+                          decoration: BoxDecoration(
+                            gradient: _greenGradient,
+                            borderRadius: BorderRadius.circular(14),
+                          ),
+                          child: Container(
+                            alignment: Alignment.center,
+                            constraints: const BoxConstraints(minHeight: 48),
+                            child: Text(
+                              isEditing ? 'Update Task' : 'Add Task',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
                           ),
                         ),
                       ),

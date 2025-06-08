@@ -7,6 +7,7 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  google_fonts: ^4.0.4
   lottie: ^2.7.0
   flutter:
     sdk: flutter
@@ -33,3 +34,4 @@ flutter:
     - assets/apple_logo.png
     - assets/facebook_logo.png
     - assets/empty.json
+    - assets/sync.json
