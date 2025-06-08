@@ -9,10 +9,13 @@ Flutter Task Manager with AI Sentiment Analysis using TensorFlow Lite (MobileBER
 A sleek Flutter app to manage your daily tasks with offline-first support and AI-powered sentiment analysis. Tasks sync between local storage and a mock remote server, and each task's mood vibes get analyzed using a MobileBERT TFLite model for positive, negative, or neutral sentiment. All wrapped in a smooth, user-friendly UI with animations and swipe gestures.
 
 ---
-## Demo Video  
-This demo video highlights core app features including offline task management, AI sentiment analysis, syncing, and UI animations.
-Watch the demo [here](https://youtube.com/shorts/uqJ2315paLc?feature=shared)    
----
+
+## 🎥 Demo Video
+
+Click the thumbnail below to watch the app demo on YouTube!
+
+[![Watch Demo Video](https://img.youtube.com/vi/uqJ2315paLc/hqdefault.jpg)](https://youtube.com/shorts/uqJ2315paLc?feature=shared)
+
 ---
 
 ## 🖼️ Screenshots
