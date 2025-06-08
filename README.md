@@ -13,6 +13,20 @@ A sleek Flutter app to manage your daily tasks with offline-first support and AI
 This demo video highlights core app features including offline task management, AI sentiment analysis, syncing, and UI animations.
 Watch the demo [here](https://youtube.com/shorts/uqJ2315paLc?feature=shared)    
 ---
+---
+
+## 🖼️ Screenshots
+
+Check out some app screenshots showing off key features and UI vibes:
+
+| Add Task         | Check Task        | Delete Task       |
+|------------------|-------------------|-------------------|
+| ![Add Task](assets/screenshots/addtask.jpg)   | ![Check Task](assets/screenshots/checktask.jpg)  | ![Delete Task](assets/screenshots/deletetask.jpg)  |
+
+| Edit Task        | Home Screen       |
+|------------------|-------------------|
+| ![Edit Task](assets/screenshots/edittask.jpg) | ![Home Screen](assets/screenshots/homescreen.jpg) |
+
 ## 📱 App Structure & Features
 
 ### main.dart — App Entry Point
