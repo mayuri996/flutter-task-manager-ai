@@ -138,23 +138,46 @@ docker-compose up --build
 
 ## 📂 Project Structure Summary
 
-```
 lib/
- ├── main.dart           # App entry
- ├── home_screen.dart    # Task list UI & logic
- ├── add_edit_task.dart  # Add/Edit task form
- ├── sentiment_service.dart # AI sentiment analysis service
- ├── sync_service.dart      # Offline-first sync logic
+ ├── main.dart                # App entry
+ ├── home_screen.dart         # Task list UI & logic
+ ├── add_edit_task.dart       # Add/Edit task form
+ ├── sentiment_service.dart   # AI sentiment analysis service
+ ├── sync_service.dart        # Offline-first sync logic
+ ├── db/
+ │    └── task_database.dart  # Local SQLite DB helper
+ ├── models/
+ │    └── task.dart           # Task data model
+ ├── screens/
+ │    ├── add_edit_task.dart  # Add/Edit task screen UI
+ │    └── home_screen.dart    # Main screen UI
+ └── services/
+      ├── sentiment_service.dart  # AI sentiment analysis logic
+      └── sync_service.dart       # Sync logic between local & server
+
 assets/
- ├── mobilebert.tflite   # TFLite model file
- ├── vocab.txt           # Token vocab for tokenizer
- ├── labels.txt          # Sentiment labels
+ ├── mobilebert.tflite       # TFLite model file
+ ├── wordvec.tflite          # Word vector model file
+ ├── vocab.txt               # Token vocab for tokenizer
+ ├── labels.txt              # Sentiment labels
+ ├── empty.json              # Empty JSON for mock server
+ ├── sync.json               # Sync data JSON
+ ├── testing.md              # Testing notes
+ ├── screenshots/
+ │    ├── addtask.jpg
+ │    ├── checktask.jpg
+ │    ├── deletetask.jpg
+ │    ├── edittask.jpg
+ │    └── homescreen.jpg
+
 .github/
  └── workflows/
       └── build_flutter_apk.yml   # GitHub Actions workflow
+
 docker-compose.yml        # Docker compose file for mock backend
 Dockerfile                # Dockerfile for mock backend server
 mock_server.py            # Flask mock backend server code
+
 ```
 ---
 
