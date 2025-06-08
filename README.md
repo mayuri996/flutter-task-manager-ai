@@ -156,4 +156,55 @@ docker-compose.yml        # Docker compose file for mock backend
 Dockerfile                # Dockerfile for mock backend server
 mock_server.py            # Flask mock backend server code
 ```
+---
+
+## 🛠️ Setup Instructions
+
+Follow the steps below to run the project locally and explore all features:
+
+### 🔧 Prerequisites
+
+Make sure the following are installed:
+
+- [Flutter SDK (v3.19.6 or higher)](https://docs.flutter.dev/get-started/install)
+- [Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)
+- Android Emulator or a physical Android device
+
+### 📦 Clone the Repository
+
+```bash
+git clone https://github.com/mayuri996/flutter-task-manager-ai.git
+cd flutter-task-manager-ai
+```
+### 📥 Install Dependencies
+flutter pub get
+### 📱 Run the App
+flutter run
+Make sure an emulator is running or a physical device is connected.
+---
+
+### ⚙️ Run the Mock Backend (for Sync)
+
+This project includes a **Dockerized Flask mock server**. To run it:
+
+#### 1. Install Docker  
+🔗 [Download Docker](https://www.docker.com/products/docker-desktop)
+
+#### 2. Run the backend:
+
+```bash
+docker-compose up --build
+```
+The mock server will start at 👉 http://localhost:5000
+---
+
+### 📂 APK File
+
+You can directly install the APK on your Android device without setting up the project manually:
+
+📲 [Download APK via Google Drive](https://drive.google.com/file/d/1XO2cxbes19C41jP9so5csrANEMSa8QiF/view?usp=sharing)
+
+> This is helpful if you want to try the app quickly without setting up Flutter or running the code locally.
+
+
 
