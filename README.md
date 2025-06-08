@@ -11,7 +11,11 @@ A sleek Flutter app to manage your daily tasks with offline-first support and AI
 ---
 
 ## 🎥 Demo Video
-Drive Link:(https://drive.google.com/file/d/1mWgtruVmF3Gfr3aawyfvjjcewIwZNVbv/view?usp=drivesdk)
+
+Check out the demo video showcasing the features and functionality of the offline task management app:
+
+🔗 [Watch Demo Video](https://drive.google.com/file/d/1mWgtruVmF3Gfr3aawyfvjjcewIwZNVbv/view?usp=drivesdk)
+
 Click the thumbnail below to watch the app demo on YouTube!
 
 [![Watch Demo Video](https://img.youtube.com/vi/uqJ2315paLc/hqdefault.jpg)](https://www.youtube.com/shorts/uqJ2315paLc))
