@@ -121,7 +121,7 @@ coverage/
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
 
-# Flutter repo-specific (optional, but you can keep if you want)
+# Flutter repo-specific (optional, you can uncomment if needed)
 # /bin/cache/
 # /bin/internal/bootstrap.bat
 # /bin/internal/bootstrap.sh
