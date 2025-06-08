@@ -1,6 +1,6 @@
-# mayuripaliwal
+# flutter-task-manager-ai
 
-A new Flutter project.
+Flutter Task Manager with AI Sentiment Analysis using TFLite
 
 ## Getting Started
 
