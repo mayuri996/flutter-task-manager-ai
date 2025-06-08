@@ -34,7 +34,39 @@ Check out some app screenshots showing off key features and UI vibes:
 |-------------------|-------------------|------------------|
 | ![Delete Task](assets/screenshots/deletetask.jpg) | ![Check Task](assets/screenshots/checktask.jpg) | ![Task List](assets/screenshots/tasklist.png) |
 
+### 🧠 Sentiment Analysis
 
+This app uses an offline TensorFlow Lite model to classify the **emotional tone** of a task based on its description.
+
+The model outputs two scores:
+- **POS**: Probability of positive sentiment  
+- **NEG**: Probability of negative sentiment  
+
+We classify the sentiment into human-readable labels using the logic below:
+Below is an example of how tasks are labeled with sentiments based on their description:
+
+![Sentiment Example](assets/screenshots/sentiment.jpg)
+```dart
+String classifySentiment(double pos, double neg) {
+  if (pos >= 0.99 && neg < 0.01) {
+    return 'strongly positive';
+  } else if (pos >= 0.85) {
+    return 'positive';
+  } else if (neg >= 0.85) {
+    return 'strongly negative';
+  } else if (neg >= 0.6) {
+    return 'negative';
+  } else if ((pos - neg).abs() < 0.15) {
+    return 'neutral';
+  } else if (neg >= 0.4) {
+    return 'somewhat negative';
+  } else if (pos >= 0.6) {
+    return 'somewhat positive';
+  } else {
+    return 'uncertain';
+  }
+}
+```
 ---
 ## 📱 App Structure & Features
 
