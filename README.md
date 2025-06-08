@@ -181,9 +181,13 @@ git clone https://github.com/mayuri996/flutter-task-manager-ai.git
 cd flutter-task-manager-ai
 ```
 ### 📥 Install Dependencies
+```
 flutter pub get
+```
 ### 📱 Run the App
+```
 flutter run
+```
 Make sure an emulator is running or a physical device is connected.
 ---
 
