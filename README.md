@@ -178,7 +178,6 @@ docker-compose.yml        # Docker compose file for mock backend
 Dockerfile                # Dockerfile for mock backend server
 mock_server.py            # Flask mock backend server code
 
-```
 ---
 
 ## 🛠️ Setup Instructions
